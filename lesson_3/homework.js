@@ -69,11 +69,12 @@
 
 
 // // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
-// function listOfElements(){
+// function listOfElements(mas){
 //     document.write(`<ul>`);
-//     for(argument of arguments){
-//         document.write(`<li>${argument}</li>`);
+//     for(item of mas){
+//         document.write(`<li>${item}</li>`);
 //     }
 //     document.write(`</ul>`);
 // }
-// listOfElements('hello', 67, true, 'qwerty', 3, 56, false);
+// let mas = ['hello', 67, true, 'qwerty', 3, 56, false];
+// listOfElements(mas);

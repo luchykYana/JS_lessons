@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+.all{
+    width: 800px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.a-center{
+    align-items: center;
+}
+
+.column_gap20{
+    grid-column-gap: 20px;
+}
+
+.bart1{
+    background: dodgerblue;
+}
+
+.homer1{
+    background: deeppink;
+}
+
+.marge1{
+    background: mediumseagreen;
+}
+
+.lisa1{
+    background: #ff5050;
+}
+
+.maggie1{
+    background: lightblue;
+}
+
+h2{
+    color: white;
+}
+
+p{
+    color: white;
+}

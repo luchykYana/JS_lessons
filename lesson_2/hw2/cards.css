@@ -1,0 +1,13 @@
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(70, 130, 180, 0.2);
+}
+
+.post_card{
+    width: 250px;
+    border: 5px solid steelblue;
+    margin: 10px;
+    padding: 10px;
+    background: white;
+}

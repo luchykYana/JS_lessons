@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.all{
+    width: 800px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.sides{
+    padding: 5px;
+    margin-bottom: 40px;
+}
+
+.bart{
+    border: 5px solid dodgerblue;
+}
+
+.homer{
+    border: 5px solid deeppink;
+}
+
+.marge{
+    border: 5px solid mediumseagreen;
+}
+
+.lisa{
+    border: 5px solid #ff5050;
+}
+
+.maggie{
+    border: 5px solid lightblue;
+}
+
+.name{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.surname{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.age{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info{
+    font-size: 22px;
+
+}

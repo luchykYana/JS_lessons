@@ -1,0 +1,25 @@
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.product_card{
+    border: 5px solid silver;
+    margin: 50px;
+    padding: 15px;
+    width: 350px;
+}
+
+.product_card img{
+    width: 350px;
+}
+
+.product_title{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.product_info{
+    font-size: 16px;
+}

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.users_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.user_block{
+    width: 700px;
+    border: 5px solid rgba(199, 0, 0, 0.7);
+    border-right: 40px double rgba(0, 0, 139, 0.7);
+    margin: 20px;
+    padding: 20px;
+    color: mediumblue;
+}
+
+h2{
+    color: darkblue;
+    font-size: 30px;
+}
+
+.user_address, .user_company, h4{
+    margin-left: 70px;
+}
+
+.user_address_geo{
+    margin-left: 90px;
+}
+
+h3{
+    margin-left: 40px;
+}

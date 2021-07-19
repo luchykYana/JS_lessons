@@ -11,6 +11,7 @@ function step2(n){
     }
     return 'Not step 2';
 }
+
 console.log(step2(1024));
 console.log(step2(256));
 console.log(step2(333));

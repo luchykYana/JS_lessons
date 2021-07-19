@@ -33,20 +33,13 @@
 // // let n2 = 'Ron Whisley'
 // // let n3 = 'Hermione Granger'
 // function normName(n){
-//     let str = '';
-//     let k = 0;
-//     for(let i = 0; i < n.length; i++) {
-//         if (n[i] !== ' ') {
-//             str += n[i];
-//         }
-//         if(n[i] === ' '){
-//             k++;
-//             if(k === 5){
-//                 str += ' ';
-//             }
+//     let str = [];
+//     for(let item of n.split(' ')){
+//         if(item !== ''){
+//             str.push(item);
 //         }
 //     }
-//     return str;
+//     return str.join(' ');
 // }
 // console.log(normName('    Harry       Potter      '));
 // console.log(normName('    Ron       Whisley      '));
@@ -61,6 +54,7 @@
 // // [0,1,2,3,4] => [1,2,3,4,0]
 // // [0,0,1,0]   => [1,0,0,0]
 //
+
 // function zeroInTheEnd(mas){
 //     if(mas.length < 2 || mas.length > 100){
 //         return '2 > Array[] > 100';
@@ -80,4 +74,16 @@
 // }
 // console.log(zeroInTheEnd([1,4,0,3,12,0,56,34,0,7,0,12,34]));
 
-
+// function zeroInTheEnd(mas){
+//     if(mas.length < 2 || mas.length > 100){
+//         return '2 > Array[] > 100';
+//     }
+//     for(let i = 0; i < mas.length; i++){
+//         if(mas[i] === 0){
+//             mas.splice(i, 1);
+//             mas.push(0);
+//         }
+//     }
+//     return mas;
+// }
+// console.log(zeroInTheEnd([1, 4, 0, 3, 12, 0, 56, 34, 0, 7, 0, 12, 34]));

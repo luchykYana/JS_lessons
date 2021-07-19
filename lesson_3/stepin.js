@@ -4,7 +4,6 @@
 
 
 function step2(n){
-    const num = 2;
     for(let i = 0; i < 100; i++){
         if(Math.pow(2, i) === n){
             return i;
@@ -12,5 +11,6 @@ function step2(n){
     }
     return 'Not step 2';
 }
-
+console.log(step2(1024));
+console.log(step2(256));
 console.log(step2(333));

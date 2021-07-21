@@ -24,40 +24,40 @@
 //         bs: 'harness real-time e-markets'
 // }
 // }
-
-class User{
-    constructor(id, name, username, email,
-                address = {street, suit , city, zipcode, geo:{lat,lng}},
-                phone, website, company = {name, catchPhrase, bs}) {
-        this.id = id;
-        this.name = name;
-        this.username = username;
-        this.email = email;
-        this.address = {
-            street: address.street,
-            suit: address.suit,
-            city: address.city,
-            zipcode: address.zipcode,
-            geo:{
-                lat: address.geo.lat,
-                lng: address.geo.lat
-            }
-        }
-        this.phone = phone;
-        this.website = website;
-        this.company = {
-            name: company.name,
-            catchPhrase: company.catchPhrase,
-            bs: company.bs
-        }
-    }
-}
-let user = new User(1,'Leanne Graham','Bret','Sincere@april.biz', {street: 'Kulas Light',
-    suite: 'Apt. 556', city: 'Gwenborough',zipcode: '92998-3874', geo:{lat: '-37.3159', lng: '81.1496'}},
-    '1-770-736-8031 x56442', 'hildegard.org',
-    {name:'Romaguera-Crona',catchPhrase: 'Multi-layered client-server neural-net',bs: 'harness real-time e-markets'});
-
-console.log(user);
+//
+// class User{
+//     constructor(id, name, username, email,
+//                 address = {street, suit , city, zipcode, geo:{lat,lng}},
+//                 phone, website, company = {name, catchPhrase, bs}) {
+//         this.id = id;
+//         this.name = name;
+//         this.username = username;
+//         this.email = email;
+//         this.address = {
+//             street: address.street,
+//             suit: address.suit,
+//             city: address.city,
+//             zipcode: address.zipcode,
+//             geo:{
+//                 lat: address.geo.lat,
+//                 lng: address.geo.lat
+//             }
+//         }
+//         this.phone = phone;
+//         this.website = website;
+//         this.company = {
+//             name: company.name,
+//             catchPhrase: company.catchPhrase,
+//             bs: company.bs
+//         }
+//     }
+// }
+// let user = new User(1,'Leanne Graham','Bret','Sincere@april.biz', {street: 'Kulas Light',
+//     suite: 'Apt. 556', city: 'Gwenborough',zipcode: '92998-3874', geo:{lat: '-37.3159', lng: '81.1496'}},
+//     '1-770-736-8031 x56442', 'hildegard.org',
+//     {name:'Romaguera-Crona',catchPhrase: 'Multi-layered client-server neural-net',bs: 'harness real-time e-markets'});
+//
+// console.log(user);
 
 
 

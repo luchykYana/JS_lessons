@@ -87,5 +87,17 @@
 // map.sort((a,b) => b.id - a.id);
 // console.log(map);
 //
-// // e) Всі хто одружений мають попасти у новий масив та отрмати квартиру (reduce)
 
+
+
+// // e) Всі хто одружений мають попасти у новий масив та отрмати квартиру (reduce)
+//
+// let reduce = users.reduce((acc,value) => {
+//     if(value.isMarried){
+//         value.flat = true;
+//         acc.push(value);
+//     }
+//     return acc;
+// },[]);
+//
+// console.log(reduce);

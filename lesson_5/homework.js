@@ -37,12 +37,14 @@ console.log(content);
 // let fc_rules = document.getElementsByClassName('fc_rules');
 //
 // for (const fcRule of fc_rules) {
-//     fcRule.onclick = function (){
+//     fcRule.addEventListener('click',()=>{
 //         console.log(fcRule.textContent);
-//         console.log('hello');
-//     }
+//     })
+//     fcRule.addEventListener('click',()=>{
+//             console.log('hello');
+//     })
 // }
-//
+
 // // -- поміняти колір тексту у всіх елементів fc_rules на червоний
 //
 // for (const fcRule of fc_rules) {

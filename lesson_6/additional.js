@@ -48,7 +48,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
                 userKeyDiv.style.marginBottom = '5px';
             }
-            let btnPosts = document.createElement('button');
+
+             let btnPosts = document.createElement('button');
 
             btnPosts.onclick = () => {
                 fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/posts`)
@@ -86,6 +87,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
                                 fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments/`)
                                     .then(value => value.json())
                                     .then(comments => {
+
+
 
                                         let commentsBox = document.getElementsByClassName('comments-box')[0];
                                         commentsBox.innerHTML = '';
@@ -140,6 +143,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
             userDiv.appendChild(btnPosts);
             usersBox.appendChild(userDiv);
+
 
             btnPosts.style.width = '100px';
             btnPosts.style.height = '30px';

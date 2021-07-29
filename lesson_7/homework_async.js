@@ -15,69 +15,136 @@
 // І так далі
 
 
-// wakeUp = () => new Promise(resolve => setTimeout(() => {
-//     console.log('1. Wake up!');
-//     resolve();
-//     }, 500))
+// wakeUp = (isTrue) => new Promise((resolve, reject) => setTimeout(() => {
+//     if(isTrue){
+//         console.log('1. Wake up!');
+//         resolve();
+//     }
+//     else{
+//         console.log('False');
+//         reject('You don`t wake up!');
+//     }
+// }, 500))
 //
-// feedTheCat = () => new Promise(resolve => setTimeout(() => {
-//     console.log('2. Feed Busya');
-//     resolve();
-//     }, 300))
+// feedTheCat = (isTrue) => new Promise((resolve, reject) => setTimeout(() => {
+//     if(isTrue){
+//         console.log('2. Feed Busya');
+//         resolve();
+//     }
+//     else{
+//         console.log('False');
+//         reject('You don`t feed cat');
+//     }
+// }, 300))
 //
-// breakfast = () => new Promise(resolve => setTimeout(() => {
-//     console.log('3. Breakfast');
-//     resolve();
-//     }, 1000))
+// breakfast = (isTrue) => new Promise((resolve, reject) => setTimeout(() => {
+//     if(isTrue){
+//         console.log('3. Breakfast');
+//         resolve();
+//     }
+//     else{
+//         console.log('False');
+//         reject('You don`t have breakfast');
+//     }
+// }, 1000))
 //
-// takeAShower = () => new Promise(resolve => setTimeout(() => {
-//     console.log('Take a shower');
-//     resolve();
-//     }, 500))
+// takeAShower = (isTrue) => new Promise((resolve, reject) => setTimeout(() => {
+//     if(isTrue){
+//         console.log('Take a shower');
+//         resolve();
+//     }
+//     else{
+//         console.log('False');
+//         reject('You don`t have a shower');
+//     }
+// }, 500))
 //
-// goToTheStore = () => new Promise(resolve => setTimeout(() => {
-//     console.log('5. Go to the store');
-//     resolve();
-//     }, 2000))
+// goToTheStore = (isTrue) => new Promise((resolve, reject) => setTimeout(() => {
+//     if(isTrue){
+//         console.log('5. Go to the store');
+//         resolve();
+//     }
+//     else{
+//         console.log('False');
+//         reject('You didn`t go to the store');
+//     }
+// }, 2000))
 //
-// lunch = () => new Promise(resolve => setTimeout(() => {
-//     console.log('6. Lunch');
-//     resolve();
-//     }, 1000))
+// lunch = (isTrue) => new Promise((resolve, reject) => setTimeout(() => {
+//     if(isTrue){
+//         console.log('6. Lunch');
+//         resolve();
+//     }
+//     else{
+//         console.log('False');
+//         reject('You don`t have a lunch');
+//     }
+// }, 1000))
 //
-// doHomework = () => new Promise(resolve => setTimeout(() => {
-//     console.log('7. Do homework');
-//     resolve();
-//     }, 3000))
+// doHomework = (isTrue) => new Promise((resolve, reject) => setTimeout(() => {
+//     if(isTrue){
+//         console.log('7. Do homework');
+//         resolve();
+//     }
+//     else{
+//         console.log('False');
+//         reject('You don`t finish your homework');
+//     }
+// }, 3000))
 //
-// toGoForAWalk = () => new Promise(resolve => setTimeout(() => {
-//     console.log('8. To go for a walk');
-//     resolve();
-//     }, 4000))
+// toGoForAWalk = (isTrue) => new Promise((resolve, reject) => setTimeout(() => {
+//     if(isTrue){
+//         console.log('8. To go for a walk');
+//         resolve();
+//     }
+//     else{
+//         console.log('False');
+//         reject('You didn`t go for a walk');
+//     }
+// }, 4000))
 //
-// supper = () => new Promise(resolve => setTimeout(() => {
-//     console.log('9. Supper');
-//     resolve();
-//     }, 1000))
+// supper = (isTrue) => new Promise((resolve, reject) => setTimeout(() => {
+//     if(isTrue){
+//         console.log('9. Supper');
+//         resolve();
+//     }
+//     else{
+//         console.log('False');
+//         reject('You don t have a supper');
+//     }
+// }, 1000))
 //
-// fallAsleep = () => new Promise(resolve => setTimeout(() => {
-//     console.log('11. Fall asleep');
-//     resolve();
-//     }, 1000))
+// fallAsleep = (isTrue) => new Promise((resolve, reject) => setTimeout(() => {
+//     if(isTrue){
+//         console.log('False');
+//         reject('You didn`t go to bad');
+//     }
+//     else{
+//         console.log('11. Fall asleep');
+//         resolve();
+//     }
+// }, 1000))
+//
+//
 //
 // async function myDay(){
-//     await wakeUp();
-//     await feedTheCat();
-//     await breakfast();
-//     await takeAShower();
-//     await goToTheStore();
-//     await lunch();
-//     await doHomework();
-//     await toGoForAWalk();
-//     await supper();
-//     await takeAShower();
-//     await fallAsleep();
-//     console.log('The end 3');
+//     try{
+//         await wakeUp(true);
+//         await feedTheCat(true);
+//         await breakfast(true);
+//         await takeAShower(true);
+//         await goToTheStore(false);
+//         await lunch(true);
+//         await doHomework(true);
+//         await toGoForAWalk(true);
+//         await supper(true);
+//         await takeAShower(true);
+//         await fallAsleep(true);
+//         console.log('The end 3');
+//     }
+//     catch (reason){
+//         console.log(reason);
+//     }
 // }
 //
 // myDay();

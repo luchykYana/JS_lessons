@@ -14,8 +14,8 @@ input.style.height = '30px';
 button.style.width = '100px';
 button.style.height = '30px';
 button.innerText = 'CLICK';
-textArea.style.width = '170px';
-textArea.style.height = '80px';
+textArea.style.width = '295px';
+textArea.style.height = '30px';
 textArea.style.backgroundColor = 'white';
 textArea.style.marginLeft = '30px';
 

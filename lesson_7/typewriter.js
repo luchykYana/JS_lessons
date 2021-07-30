@@ -22,17 +22,20 @@ textArea.style.marginLeft = '30px';
 
 button.onclick = (ev) => {
     ev.preventDefault();
-    let inputVal = input.value;
-    console.log(inputVal);
-    let text = inputVal.split('');
-    console.log(text);
+    let text = input.value;
+    let space = String.fromCharCode(160);
 
     letter = i => new Promise(((resolve, reject) => setTimeout(() => {
         if(text[i] === undefined){
             reject('text[i] is undefined');
         }
         else{
-            textArea.textContent += text[i];
+            if(text[i] === ' '){
+                textArea.textContent += space;
+            }
+            else{
+                textArea.textContent += text[i];
+            }
             i++;
             letter(i);
             resolve();
@@ -47,7 +50,6 @@ button.onclick = (ev) => {
             console.log(reason);
         }
     }
-
     typeWriter();
 }
 
